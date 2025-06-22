@@ -9,5 +9,3 @@ The perceptron consists of a single "neuron". This biological parallel is drawn 
 ## Components of a perceptron
 
 The perceptron model uses a single neuron to perforn binary classification on a given input, or set of inputs. Inputs are recieved in the form of a vector, which in our case will be measurements of the characteristics of a group of penguins. The model assigns each of these inputs a weight.
-
-![Graphical representation of a neuron](neuron_diagram.png)
