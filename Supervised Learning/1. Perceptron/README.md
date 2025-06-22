@@ -4,7 +4,8 @@ In this file, we examine both the features of a perceptron, as well as the datas
 
 The perceptron consists of a single "neuron". This biological parallel is drawn because the perceptron is the basic unit of many machine learning models, just as the neuron is the fundamental unit of the brain. Additional comparisons can be drawn between the dendrites of a neuron and the weights of a perceptron, as shown in the images below.
 
-![Graphical representation of a neuron](neuron_diagram.png)
+<img src="neuron_diagram.png" width="500"/> <img src="perceptron-diagram.jpg" width="500"/>
+
 
 ## Components of a perceptron
 
