@@ -20,5 +20,10 @@ I found the "bill length" and "bill depth" features to lead to the the _most_ li
 
 ## Packages required
 
-In order to analyze the data and produce the necessary graphs, the following Python packages were utilized:
+In order to analyze the data and produce the necessary plots, the following Python packages were utilized:
 
+*   matplotlib.pyplot: [documentation](https://matplotlib.org/3.5.3/api/_as_gen/matplotlib.pyplot.html)
+*   numpy: [documentation](https://numpy.org/devdocs/)
+*   pandas: [documentation](https://pandas.pydata.org/docs/)
+*   mlextend.plotting: [documentation](https://rasbt.github.io/mlxtend/api_subpackages/mlxtend.plotting/)
+*   seaborn: [documentation](https://seaborn.pydata.org/)
