@@ -9,9 +9,16 @@ The perceptron consists of a single "neuron". This biological parallel is drawn 
 
 ## Components of a perceptron
 
-The perceptron model uses a single neuron to perforn binary classification on a given input, or set of inputs. Inputs are recieved in the form of a vector, which in our case will be measurements of the characteristics of a group of penguins. 
+The perceptron model uses a single neuron to perforn binary classification on a given input. Inputs are recieved in the form of a vector, which in our case will be measurements of the characteristics of a group of penguins. 
 
-The model assigns each of these inputs a weight. Initially, these weights will be chosen randomly on the interval (0,1]. After each iteration, or 'epoch' that the algorithm operates, the weights are refined such that the error value is reduced.
+The model assigns each of these inputs a weight. Initially, these weights will be chosen randomly on the interval (0,1]. Then, the model passes a weighted sum of the input vector and an additional bias term (analogous to a y-intercept in our case) into the activation function, which will be the sign function (in our example). After each iteration, or 'epoch' that the algorithm operates, the weights are refined such that the error value is reduced.
+
+Key to this refinemnt is the update rule, defined as: w ← w -  η (ŷᶦ - yᶦ) xᶦ  
+
+*    η represents the learning rate, or in other words it determines how strongly the errors in a given epoch can shift the weights
+        - A larger leanring rate does not imply faster learning. A value that is too large can cause instability and prevent the model from converging to the optimal weight.
+*    ŷᶦ is the prediction, while yᶦ is the correct value
+*    xᶦ is input vector
 
 ## The dataset
 
