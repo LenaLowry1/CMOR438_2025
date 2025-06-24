@@ -1,1 +1,1 @@
-
+- linear activation function
