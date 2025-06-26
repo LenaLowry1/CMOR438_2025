@@ -14,7 +14,7 @@ The sigmoid activation function is used in logistic regression because it maps a
 
 Finally, we need a new loss function. For this model, we utilize the binary cross entropy loss function. The concept behind this choice is the maxmimization of the sum over all of the data of the following conditional probability: 
 $$
-\Big(y^{(i)}\mid x^{(i)}\Big)=\begin{cases}
+P\Big(y^{(i)}\mid x^{(i)}\Big)=\begin{cases}
           \hat{y}^{(i)}, \quad &  y^{(i)} = 1 \\
           1-\hat{y}^{(i)}, \quad & y^{(i)} = 0 \\
      \end{cases}
@@ -22,11 +22,11 @@ $$
 
 The "more correct" our probability is (i.e., the closer it is to the true value of the data point), the larger this sum will be. Thus, at the maximum of this sum, we will find the weights and bias term that best classify the data.
 After applying the Bernoulli formula and using log rules to simplify the expression, we are left with: 
-$$
-\begin{align} 
+
+$$\begin{align} 
 \log \Big(y^{(i)}\mid x^{(i)}\Big)&= y\log \hat{y} + (1-y) \log (1 - \hat{y})\\ 
-\end{align}
-$$
+\end{align}$$
+
 Since the log function is monotonically increasing, the point at which it is maxmized is also the point at which the orignial conditional probability is maximized.
 Now, fully expressing the loss function in terms of w and b, and dividing my N in order to find the **average** error gives: 
 $$
