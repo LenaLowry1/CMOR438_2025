@@ -14,7 +14,7 @@ The sigmoid activation function is used in logistic regression because it maps a
 
 Finally, we need a new loss function. For this model, we utilize the binary cross entropy loss function. The concept behind this choice is the maxmimization of the sum over all of the data of the following conditional probability: 
 $$
-P\Big(y^{(i)}\mid x^{(i)}\Big)=\begin{cases}
+\Big(y^{(i)}\mid x^{(i)}\Big)=\begin{cases}
           \hat{y}^{(i)}, \quad &  y^{(i)} = 1 \\
           1-\hat{y}^{(i)}, \quad & y^{(i)} = 0 \\
      \end{cases}
@@ -24,13 +24,13 @@ The "more correct" our probability is (i.e., the closer it is to the true value 
 After applying the Bernoulli formula and using log rules to simplify the expression, we are left with: 
 $$
 \begin{align} 
-\log P\Big(y^{(i)}\mid x^{(i)}\Big)&= y\log \hat{y} + (1-y) \log (1 - \hat{y})\\ 
+\log \Big(y^{(i)}\mid x^{(i)}\Big)&= y\log \hat{y} + (1-y) \log (1 - \hat{y})\\ 
 \end{align}
 $$
 Since the log function is monotonically increasing, the point at which it is maxmized is also the point at which the orignial conditional probability is maximized.
 Now, fully expressing the loss function in terms of w and b, and dividing my N in order to find the **average** error gives: 
 $$
-L(\mathbf{w}, b) = -\frac{1}{N} \sum_{i=1}^{N} P\Big(y^{(i)}\mid x^{(i)}\Big) = \frac{1}{N}\sum_{i=1}^{N}\Big[ -y^{(i)}\log \hat{y}^{(i)} - (1-y^{(i)}) \log (1 - \hat{y}^{(i)})\Big ]
+(\mathbf{w}, b) = -\frac{1}{N} \sum_{i=1}^{N} P\Big(y^{(i)}\mid x^{(i)}\Big) = \frac{1}{N}\sum_{i=1}^{N}\Big[ -y^{(i)}\log \hat{y}^{(i)} - (1-y^{(i)}) \log (1 - \hat{y}^{(i)})\Big ]
 $$
 
 Note that we are minimizing the **negative** of this function, which is the same as maximizing the positive. This enables us to consistently use gradient descent.
