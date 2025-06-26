@@ -11,7 +11,7 @@ We will now use an activation function that is continuous and differentiable, su
 The new error function is : $$C(\mathbf{w}, b) = \frac{1}{2N}\sum_{i=1}^{N}\Big(\hat{y}^{(i)} - y^{(i)}\Big)^2. $$
 This is an MSE function, where N is the size of our dataset, $$\hat{y}^{(i)}$$ is our prediction, and $$y^{(i)}$$ is the actual value. Advantages to the using MSE include the fact that squaring the error emphasizes larger mistakes, which helps push the model to avoid large deviations. Additionally, MSE is convex, so there's only one global minimum, and gradient descent is guaranteed to converge (assuming a decent learning rate). Below is some simple mock data and a plot, designed to show the convexity of the MSE function.
 
-import numpy as np
+```import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
@@ -41,7 +41,7 @@ ax.plot_surface(W0, W1, MSE, cmap='viridis', alpha=0.9)
 ax.set_xlabel('w0 (intercept)')
 ax.set_ylabel('w1 (slope)')
 ax.set_title('MSE Surface for Linear Regression')
-plt.show()
+plt.show()```
 
 ![alt text](image.png)
 
