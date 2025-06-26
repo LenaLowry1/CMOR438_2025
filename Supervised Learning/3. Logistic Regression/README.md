@@ -30,8 +30,9 @@ $$
 Since the log function is monotonically increasing, the point at which it is maxmized is also the point at which the orignial conditional probability is maximized.
 Now, fully expressing the loss function in terms of w and b, and dividing my N in order to find the **average** error gives: 
 $$
-(\mathbf{w}, b) = -\frac{1}{N} \sum_{i=1}^{N} P\Big(y^{(i)}\mid x^{(i)}\Big) = \frac{1}{N}\sum_{i=1}^{N}\Big[ -y^{(i)}\log \hat{y}^{(i)} - (1-y^{(i)}) \log (1 - \hat{y}^{(i)})\Big ]
+L(\mathbf{w}, b) = -\frac{1}{N} \sum_{i=1}^{N} P\Big(y^{(i)}\mid x^{(i)}\Big) = \frac{1}{N}\sum_{i=1}^{N}\Big[ -y^{(i)}\log \hat{y}^{(i)} - (1-y^{(i)}) \log (1 - \hat{y}^{(i)})\Big ]
 $$
+
 
 Note that we are minimizing the **negative** of this function, which is the same as maximizing the positive. This enables us to consistently use gradient descent.
 
