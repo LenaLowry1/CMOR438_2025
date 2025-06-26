@@ -15,17 +15,17 @@ import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
-# Simulated data
+Simulated data:
 x = np.linspace(0, 10, 50)
 true_w0, true_w1 = 2, 3
 y = true_w0 + true_w1 * x + np.random.normal(0, 1, size=x.shape)
 
-# Create grid of weight values
+Create grid of weight values:
 w0_vals = np.linspace(0, 4, 100)
 w1_vals = np.linspace(0, 6, 100)
 W0, W1 = np.meshgrid(w0_vals, w1_vals)
 
-# Compute MSE for each (w0, w1) pair
+Compute MSE for each (w0, w1) pair:
 def compute_mse(w0, w1, x, y):
     y_pred = w0 + w1 * x[:, np.newaxis, np.newaxis]
     mse = ((y_pred - y[:, np.newaxis, np.newaxis])**2).mean(axis=0)
@@ -33,7 +33,7 @@ def compute_mse(w0, w1, x, y):
 
 MSE = compute_mse(W0, W1, x, y)
 
-# Plotting
+Plotting:
 fig = plt.figure(figsize=(10, 8))
 ax = fig.add_subplot(111, projection='3d')
 
