@@ -41,7 +41,8 @@ ax.plot_surface(W0, W1, MSE, cmap='viridis', alpha=0.9)
 ax.set_xlabel('w0 (intercept)')
 ax.set_ylabel('w1 (slope)')
 ax.set_title('MSE Surface for Linear Regression')
-plt.show()```
+plt.show()
+```
 
 ![alt text](image.png)
 
