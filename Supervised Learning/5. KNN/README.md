@@ -1,7 +1,3 @@
-Here’s a rephrased and polished version of your text:
-
----
-
 # K-Nearest Neighbors Algorithm
 
 The **K-Nearest Neighbors (KNN)** algorithm relies on a user-defined constant, $k$, to make predictions for new, unlabeled data points based on the values of the $k$ nearest labeled data points.
