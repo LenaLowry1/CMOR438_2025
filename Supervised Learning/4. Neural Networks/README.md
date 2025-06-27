@@ -16,7 +16,7 @@ The pixel values in the training and testing datasets range from 0 to 255. These
 
 One-hot encoding is a method for representing categorical variables as binary vectors. It’s commonly used in machine learning to make non-numeric labels usable by algorithms that require numeric input. In our case, clothing items are non-numeric, but they have been indexed with numbers 0-9. As a example, if we wanted to use one hot encoding to represent a sandal, we would use a vector of length 10 with all entries being 0 except the entry at index 5, which would be a one.
 
-# The Functions
+## The Functions
 
 Similar to the perceptron, data flows into a node where the inputs are summed and passed through an activation function to produce an output. Unlike in fully connected networks, not every node must be linked to every other node. For gradient descent to function properly, the activation function must be differentiable—so the sigmoid function works nicely.
 
