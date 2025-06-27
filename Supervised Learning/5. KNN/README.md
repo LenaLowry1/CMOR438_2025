@@ -2,6 +2,8 @@
 
 The **K-Nearest Neighbors (KNN)** algorithm relies on a user-defined constant, $k$, to make predictions for new, unlabeled data points based on the values of the $k$ nearest labeled data points.
 
+![knearest_neighbors.jpg](knearest_neighbors.jpg)
+
 ## For Classification:
 
 An unlabeled point is assigned the label that is most common among its $k$ nearest neighbors in the training set. This is essentially a **majority vote** among the closest samples.
