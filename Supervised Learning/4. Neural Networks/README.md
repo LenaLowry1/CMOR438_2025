@@ -53,7 +53,7 @@ Finally, update the weights and biases:
 
 
 
-# The Dataset
+## The Dataset
 
 We will be using the [MNIST fashion dataset](https://keras.io/api/datasets/fashion_mnist/). This dataset includes low resolution images of 10 different kinds of clothing, indexed as below:
 
@@ -69,3 +69,7 @@ We will be using the [MNIST fashion dataset](https://keras.io/api/datasets/fashi
 9	Ankle boot
 
 While simliar in format to the MNIST digit dataset, these patterns and textures are more complex, presenting an additional challenge. 
+
+## The Packages
+
+New to this module is the [Keras](https://keras.io/api/) package.
