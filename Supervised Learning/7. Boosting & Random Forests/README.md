@@ -1,4 +1,4 @@
-# Ensemble Boosting
+# Ensemble Boosting & Random Forests
 
 Ensemble learning combines multiple models to improve the accuracy and robustness of predictions. Ensemble methods aim to opitimze for the strengths and limitation of its various models. Applicable to both regression and classification problems, ensembles can be formed from multiple instances of the same model or a mix of different models tailored to the problem. For classification problems, ensemble models make predictions by aggregating the outputs of individual classifiers— typically through a majority vote to determine the final label.
 
@@ -37,6 +37,8 @@ Since error₂ < error₁, combining the first and second trees gives a more acc
 ## AdaBoost
 
 With AdaBoost, the algorithm begins by training a base classifier on the dataset and evaluating its predictions. Training instances that are misclassified are assigned higher weights, indicating they are harder to classify correctly. The core concept behind the model is that when a classifier misclassifies a point, that point is boosted—its influence is increased—so future classifiers are better equipped to handle it. The next classifier is then trained on this reweighted dataset, placing more emphasis on the difficult cases. This process repeats, with each new model focusing increasingly on the errors of its predecessors.
+
+## Random Forests
 
 ## The dataset
 
