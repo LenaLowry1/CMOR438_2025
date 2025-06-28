@@ -40,7 +40,7 @@ With AdaBoost, the algorithm begins by training a base classifier on the dataset
 
 ## Random Forests
 
-![Random_Forest_Algorthim.png](Random_Forest_Algorthim.png)
+![Random_Forest_Algorithm.png](Random_Forest_Algorithm.png)
 
 Random forests are a versatile ensemble learning method used for both classification and regression tasks in machine learning. The algorithm operates by constructing a large number of decision trees during training and outputting the average prediction (in regression) or majority vote (in classification) of the individual trees. Unlike a single decision tree, which can easily overfit to training data, a random forest introduces randomness by training each tree on a different random subset of the data (using **bootstrapping**, see below) and selecting a random subset of features at each split. This technique, known as **bagging** (bootstrap aggregating), helps reduce variance and improve the model's generalization to unseen data. Random forests are especially effective because they combine the simplicity of decision trees with the power of ensemble methods, often yielding high accuracy without requiring extensive parameter tuning. Additionally, they provide insights into feature importance, making them valuable not only for prediction but also for interpreting which inputs contribute most to the model's decisions.
 
