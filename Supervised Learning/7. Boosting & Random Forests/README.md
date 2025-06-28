@@ -38,8 +38,6 @@ Since error₂ < error₁, combining the first and second trees gives a more acc
 
 With AdaBoost, the algorithm begins by training a base classifier on the dataset and evaluating its predictions. Training instances that are misclassified are assigned higher weights, indicating they are harder to classify correctly. The core concept behind the model is that when a classifier misclassifies a point, that point is boosted—its influence is increased—so future classifiers are better equipped to handle it. The next classifier is then trained on this reweighted dataset, placing more emphasis on the difficult cases. This process repeats, with each new model focusing increasingly on the errors of its predecessors.
 
-## Random Forests
-
 ## The dataset
 
 For the AdaBoost model, we will use the penguins dataset, while for the Gradient Boosting model, we will generate non linear data.
