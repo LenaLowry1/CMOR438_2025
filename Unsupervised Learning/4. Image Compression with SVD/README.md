@@ -2,7 +2,7 @@
 
 Singular Value Decomposition (SVD) is a matrix factorization technique that can be used to compress images by reducing the amount of data needed to represent them.
 
-![svd_compression.png](svd.compression.png)
+![svd_compression.png](svd_compression.png)
 
 An image can be represented as a matrix (for grayscale) or three matrices (for RGB channels). SVD factors a matrix A into three matrices:
 
