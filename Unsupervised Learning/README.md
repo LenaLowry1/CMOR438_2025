@@ -2,6 +2,8 @@
 
 Unsupervised learning is a class of machine learning techniques that finds patterns or structure in data **without labeled responses**. Unlike supervised learning, there is no target variable or ground truth to guide the algorithm. Instead, the model explores the data to discover hidden relationships.
 
+![unsupervised.png](unsupervised.png)
+
 ## What It Does
 
 Given a dataset of input features:
