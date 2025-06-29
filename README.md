@@ -17,6 +17,7 @@ Supervised Learning:
 - Multilayer Neural Network
 - Decision Tree
 - Ensemble Learning and Random Forest
+
 Unsupervised Learning:
 - Principal Component Analysis
 - K-Means Clustering
