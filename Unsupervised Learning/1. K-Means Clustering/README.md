@@ -8,15 +8,15 @@ K-Means is an unsupervised machine learning algorithm used for partitioning data
 
 Given a set of data points in ℝⁿ, the K-Means algorithm seeks to partition the data into **k** clusters such that each point belongs to the cluster with the nearest mean (centroid).
 
-The goal is to minimize the **within-cluster sum of squares** (WCSS), also known as **inertia**:
+For cluster i, the new centroid μᵢ is calculated as:
 
-arg minₛ ∑ᵢ ∑ₓ∈Sᵢ ‖x − μᵢ‖²
+μᵢ = (1 / |Sᵢ|) ∑ₓ∈Sᵢ x
 
-
-Where:
-- `Sᵢ` is the set of points in cluster `i`
-- `μᵢ` is the centroid of cluster `i`
-- `‖x − μᵢ‖²` is the squared Euclidean distance
+- μᵢ = new centroid of cluster i
+- |Sᵢ| = number of points in cluster i (cardinality)
+- ∑ₓ∈Sᵢ = summation over all x in cluster Sᵢ
+- x = a data point vector assigned to that cluster
+- 1 / |Sᵢ| = arithmetic mean factor
 
 ### Algorithm Steps
 
