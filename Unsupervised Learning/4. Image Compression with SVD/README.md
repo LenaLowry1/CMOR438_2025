@@ -8,11 +8,11 @@ An image can be represented as a matrix (for grayscale) or three matrices (for R
 
 A = U Σ Vᵀ
 
-U is an m×m orthogonal matrix.
+- U is an m×m orthogonal matrix.
 
-Σ is an m×n diagonal matrix with singular values σ₁ ≥ σ₂ ≥ … ≥ σₖ ≥ 0.
+- Σ is an m×n diagonal matrix with singular values σ₁ ≥ σ₂ ≥ … ≥ σₖ ≥ 0.
 
-Vᵀ is an n×n orthogonal matrix.
+- Vᵀ is an n×n orthogonal matrix.
 
 By keeping only the top r singular values and corresponding vectors, we form a rank‑r approximation A₍ᵣ₎:
 
@@ -20,11 +20,11 @@ A₍ᵣ₎ = U₍:,₁…r₎ Σ₍₁…r,₁…r₎ Vᵀ₍₁…r,:₎
 
 where:
 
-U₍:,₁…r₎ contains the first r columns of U
+- U₍:,₁…r₎ contains the first r columns of U
 
-Σ₍₁…r,₁…r₎ contains the top r singular values on its diagonal
+- Σ₍₁…r,₁…r₎ contains the top r singular values on its diagonal
 
-Vᵀ₍₁…r,:₎ contains the first r rows of Vᵀ
+- Vᵀ₍₁…r,:₎ contains the first r rows of Vᵀ
 
 ### SVD Algorithm
 - Load Image: Convert image to grayscale matrix or separate RGB channels
