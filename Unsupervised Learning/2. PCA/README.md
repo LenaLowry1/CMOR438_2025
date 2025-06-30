@@ -8,30 +8,22 @@
 
 Given a data matrix **X** of shape (n\_samples × n\_features), center the data:
 
-```
 A = X − mean(X, axis=0)
-```
 
 Compute the covariance matrix **C** (unbiased estimator):
 
-```
 C = (1/(n−1)) · Aᵀ · A
-```
 
 Solve the eigenvalue problem:
 
-```
 C · vᵢ = λᵢ · vᵢ  for i = 1…k,  where λ₁ ≥ λ₂ ≥ … ≥ λ_k ≥ 0
-```
 
 * **vᵢ** are the principal directions (eigenvectors).
 * **λᵢ** are the variances explained by each component (eigenvalues).
 
 Equivalently, using SVD on the centered data A:
 
-```
 A = U · Σ · Vᵀ
-```
 
 * Columns of V are the principal directions.
 * Singular values σᵢ relate to variances by λᵢ = σᵢ²/(n−1).
